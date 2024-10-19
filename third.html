@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="four.html">Следущее задание ================></a>
+    <script>
+        const user1 = {
+            name: "Вова",
+            age: 27
+        }
+        const user2 = {
+            name: "Антон",
+            age: 15
+        }
+        const user3 = {
+            name: "Никита",
+            age: 46
+        }
+        const user4 = {
+            name: "Татьяна",
+            age: 16
+        }
+
+        let usersArr = [user1, user2, user3, user4];
+
+        let adults = usersArr.filter((user)=> {
+            return user.age >= 18 ;      
+        });
+
+        let names = usersArr.map((user)=> {
+            return user.name;
+        });
+
+        console.log(adults);
+        console.log(names);
+    </script>
+</body>
+</html>

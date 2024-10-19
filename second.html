@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="third.html">Следущее задание ================></a>
+    <script>
+        
+        const userInput = [+prompt('первое число (не понял задания, зачем объект и куда его пихать в apply?)'), +prompt('второе число'), prompt('Операция')];
+
+        function calculate(a, b, operation) {
+            if (operation === "+") {
+                return a+b;
+            } else if (operation === "-") {
+                return a-b;
+            } else if (operation === "*") {
+                return a*b;
+            } else if (operation === "/") {
+                return a/b;
+            }
+        }
+
+        alert(calculate.apply(null, userInput));
+    </script>
+</body>
+</html>

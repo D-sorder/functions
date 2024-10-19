@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="fifth.html">Следущее задание ================></a>
+    <script>
+        const user1 = {
+            name: "Вова",
+            age: 27
+        }
+        const user2 = {
+            name: "Антон",
+            age: 15
+        }
+        const user3 = {
+            name: "Никита",
+            age: 46
+        }
+        const user4 = {
+            name: "Татьяна",
+            age: 16
+        }
+
+        let usersArr = [user1, user2, user3, user4];
+
+        function setFullName (name) {
+            this.fullName = name;
+        };
+
+        const set = setFullName.bind(user1);
+        set('Владимир Иванов Иванович');
+
+        const set2 = setFullName.bind(user2);
+        set2('Чел Челов');                      //не знаю как лучше :/
+
+        console.log(user1);
+        console.log(user2);
+    </script>
+</body>
+</html>
